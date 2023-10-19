@@ -18,6 +18,12 @@ resource webApplication 'Microsoft.Web/sites@2022-09-01' = {
   properties: {
     serverFarmId: appServicePlan.id
     siteConfig: {
+      connectionStrings: [
+        {
+          name: 'demo'
+          connectionString: 'Server=myServerAddress;Database=myDataBase;User Id=myUsername;Password=myPassword;'
+        }
+      ]
       ftpsState: 'AllAllowed'
       minTlsVersion: '1.0'
     }
