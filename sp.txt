@@ -1,6 +1,0 @@
-{
-  "appId": "a0654f6r-d54ee-430a-b2ad-d54rw5t81c03",
-  "displayName": "fakesp",
-  "password": "iuO88t74re8tg4reO~EMUeYjFV8AfuOZ3zcUc",
-  "tenant": "fds46gh9-87gt-54rw-1144-445f945fraa35"
-}
