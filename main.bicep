@@ -18,7 +18,14 @@ resource webApplication 'Microsoft.Web/sites@2022-09-01' = {
   properties: {
     serverFarmId: appServicePlan.id
     siteConfig: {
+      appSettings: [
+        {
+          name: 'StorageKey'
+          value: 'duKMjSsdgW0Hcd32vbj4OMi5RVV/iXgGhvbYDjMAfR/AQgNPgc/KTUXQvZhWIeE3Z2JzyV91Uqf7+AStrhACHw=='
+        }
+      ]
+      ftpsState: 'AllAllowed'
+      minTlsVersion: '1.0'
     }
   }
 }
-
